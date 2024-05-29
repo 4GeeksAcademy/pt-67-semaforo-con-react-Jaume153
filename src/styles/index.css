@@ -10,49 +10,42 @@
     import 'relative/path/to/stylesheet.scss';
 
 */
+
 .traffic-light-container {
-    width: 100px;
+    width: 150px;
     margin: 50px auto;
-    padding: 20px;
+    padding: 30px;
     background-color: black;
     border-radius: 20px;
     display: flex;
     flex-direction: column;
     align-items: center;
+    position: relative;
 }
 
 .light {
-    width: 80px;
-    height: 80px;
-    margin: 15px 0;
+    width: 100px;
+    height: 100px;
+    margin: 20px 0;
     border-radius: 50%;
     background-color: gray;
-    transition: background-color 0.3s, box-shadow 0.3s;
+    position: relative;
+    transition: background-color 0.3s;
+    
 }
 
 .light.red {
-    background-color: #660000;
+    background-color: #cf1111;
 }
 
 .light.yellow {
-    background-color: #666600;
+    background-color: #d3d312;
 }
 
 .light.green {
-    background-color: #006600;
+    background-color: #10c710;
 }
 
-.light.glow.red {
-    background-color:red;
-    box-shadow: 0 0 80px rgb(236, 240, 5);
-}
-
-.light.glow.yellow {
-    background-color: yellow;
-    box-shadow: 0 0 80px rgb(236, 240, 5);
-}
-
-.light.glow.green {
-    background-color: green;
-    box-shadow: 0 0 80px rgb(236, 240, 5);
+.light.glow {
+    box-shadow: 0 0 60px 30px rgb(240, 240, 117);
 }
